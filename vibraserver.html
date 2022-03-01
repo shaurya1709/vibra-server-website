@@ -1,0 +1,44 @@
+<!doctype html>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+<title>Vibra - The Original Server</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@101.5,506&display=swap" rel="stylesheet">
+<style>
+	body {font-family: Archivo; background: #161618; color: #fff}
+	* {font-family: inherit;}
+	h1, h2, h3, h4, h5, h6, p {width: 100vw; text-align: center; text-transform: capitalize}
+	
+	span.ping {background: #5865F2; padding: 0.25em; border-radius: 0.25em}
+	
+	button {background: #5865F2; border: none; color: #fff; font-size: 0.8em; margin: 1em; padding: 0.5em; border-radius: 0.5em}
+</style>
+
+<!-- Page Content !-->
+<div style="height: 100vh; width: 100vw; position: fixed; top: 0; left: 0; text-align: center">
+	<div style="height: 25%;"><img style="src: url(vibraserverbg.jpeg); height: 25vh;" src="vibraserverbg.jpeg"></div>
+	<h1 style="font-size: 2.5em">vibra</h1>
+	<h2><em>another discord server</em></h2>
+	<p>listen to music, chat with others, play games and participate in events<br><button onclick="window.open('https://discord.gg/Dn3VJE7k')">Join Now!</button></p>
+	<div style="height: 5%;"></div>
+	<h1>Announcements</h1>
+	<p>:horn: you can now set your birthdays!</p>
+	<p>:horn: Give suggestions for the server slogan(required for the website) in <span class="ping">slogan-suggestions</span> . <span class="ping">@everyone</span></p>
+	<div style="height: 5%;"></div>
+	<h1>Birthdays</h1>
+	<p>:cal: ItsShaurya: 14th May 2022</p>
+</div>
+<img src="hmmm.webp" style="display: none">
+<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '943778423195721749', // Vibra
+        channel: '943778423195721756', // #general
+		glyph: ['servericon.png', '85%'],
+		notifications: true,
+		indicator: true,
+		timeout: 2000,
+		color: '#161618'
+    });
+</script>
+<script>
+	document.body.innerHTML = document.body.innerHTML.replaceAll(':horn:', '<img style="height: 1em" src="https://raw.githubusercontent.com/shaurya1709/noto-emoji/svg_flags2/svg/emoji_u1f4e2.svg">&nbsp;');
+	document.body.innerHTML = document.body.innerHTML.replaceAll(':cal:', '<img style="height: 1em" src="https://raw.githubusercontent.com/shaurya1709/noto-emoji/svg_flags2/svg/emoji_u1f4c5.svg">&nbsp;')
+</script>
